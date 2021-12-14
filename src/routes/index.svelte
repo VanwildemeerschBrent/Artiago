@@ -2,18 +2,12 @@
 	export const prerender = true;
 </script>
 
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
 
 <main>
-	<h1>
-		Art Institute of Chicago
-	</h1>
+	<h1>Art Institute of Chicago</h1>
 </main>
 
 <style>

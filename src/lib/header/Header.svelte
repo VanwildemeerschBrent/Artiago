@@ -6,7 +6,9 @@
 	<nav>
 		<ul>
 			<li class:active={$page.path === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.path === '/collections'}><a sveltekit:prefetch href="/collections">Collections</a></li>
+			<li class:active={$page.path === '/collections'}>
+				<a sveltekit:prefetch href="/collections">Collections</a>
+			</li>
 			<li class:active={$page.path === '/shop'}><a sveltekit:prefetch href="/shop">Shop</a></li>
 		</ul>
 	</nav>
@@ -14,6 +16,8 @@
 
 <style>
 	header {
+		width: 100%;
+		background:white;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -24,8 +28,6 @@
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
 	}
-
-
 
 	ul {
 		position: relative;

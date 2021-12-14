@@ -1,1 +1,7 @@
-<h1>Collections</h1>
+<script>
+    import CollectionList from '$lib/collections/list.svelte';
+</script>
+
+
+<CollectionList/>
+

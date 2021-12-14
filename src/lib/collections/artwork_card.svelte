@@ -1,8 +1,13 @@
+<script>
+	export let title;
+	export let imageID;
+
+	const baseUrl = 'https://www.artic.edu/iiif/2';
+</script>
+
 <div class="card">
-	<img src="https://picsum.photos/300/200" alt="art_image" />
-	<h1>Tailored Jeans</h1>
-	<p>Some text about the jeans..</p>
-	<!-- <p><button>Add to Cart</button></p> -->
+	<img src={`${baseUrl}/${imageID}/full/843,/0/default.jpg`} alt="art_image" />
+	<h3>{title}</h3>
 </div>
 
 <style>
@@ -20,6 +25,7 @@
 
 	img {
 		width: 100%;
+        max-height:300px;
 	}
 
 	.card button {

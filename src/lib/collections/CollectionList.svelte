@@ -1,5 +1,5 @@
 <script>
-	import ArtworkCard from '$lib/collections/artwork_card.svelte';
+	import ArtworkCard from '$lib/collections/ArtworkCard.svelte';
 	import Loader from '$lib/core/Loader.svelte';
 	let paginatedData = null;
 	let artworks = [];

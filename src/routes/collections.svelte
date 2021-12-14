@@ -1,5 +1,5 @@
 <script>
-    import CollectionList from '$lib/collections/list.svelte';
+    import CollectionList from '$lib/collections/CollectionList.svelte';
 </script>
 
 

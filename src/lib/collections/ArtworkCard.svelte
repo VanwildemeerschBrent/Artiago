@@ -3,10 +3,19 @@
 	export let imageID;
 
 	const baseUrl = 'https://www.artic.edu/iiif/2';
+	let noImageSrc = 'images/no_image.jpg';
+
+	function onClickCard() {
+		console.log('Clicked card');
+	}
 </script>
 
-<div class="card">
-	<img src={`${baseUrl}/${imageID}/full/843,/0/default.jpg`} alt="art_image" />
+<div class="card" on:click={onClickCard}>
+	{#if imageID}
+		<img src={`${baseUrl}/${imageID}/full/843,/0/default.jpg`} alt="art_image" />
+	{:else}
+		<img src={noImageSrc} alt="art_image" />
+	{/if}
 	<h3>{title}</h3>
 </div>
 
@@ -14,7 +23,8 @@
 	.card {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		max-width: 300px;
-		margin: auto;
+		width: 300px;
+		margin: 0.5;
 		text-align: center;
 		font-family: arial;
 		background: white;
@@ -25,7 +35,7 @@
 
 	img {
 		width: 100%;
-        max-height:300px;
+		max-height: 300px;
 	}
 
 	.card button {
